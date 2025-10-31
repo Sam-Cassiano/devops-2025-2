@@ -19,3 +19,12 @@ jobs:
          uses: actions/setup-node@v4
          with:
             node-version: '22'
+
+       - name : Setup Corepack
+         run: corepack enable
+
+       - name : install dependencies
+         run: yarn
+        
+
+      
